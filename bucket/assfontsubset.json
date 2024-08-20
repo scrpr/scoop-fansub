@@ -21,7 +21,7 @@
                 "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-x64.7z"
             },
             "arm64": {
-                "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-arm64.zip"
+                "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-arm64.7z"
             }
         }
     }
