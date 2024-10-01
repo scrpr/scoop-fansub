@@ -1,16 +1,16 @@
 {
-    "version": "2.0.4",
+    "version": "2.0.5",
     "description": "使用 fonttools 生成 ASS 字幕文件的字体子集，并自动修改字体名称及 ASS 文件中对应的字体名称",
     "homepage": "https://github.com/AmusementClub/AssFontSubset",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.0.4/AssFontSubset.Console_v2.0.4_win-x64.7z",
-            "hash": "bcf77af23da6b8cc306765cd8f7eb9d12f1acf13d21bdc8163010932670ecb8c"
+            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.0.5/AssFontSubset.Console_v2.0.5_win-x64.7z",
+            "hash": "ff09f4918548585ecdf8af9432daa600da17cfd85b385ee2143eb9bd97772c07"
         },
         "arm64": {
-            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.0.4/AssFontSubset.Console_v2.0.4_win-arm64.7z",
-            "hash": "eb2dae96b131830f8e3b4a5440d2cddab55779db23a815f2419d61ec210628d0"
+            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.0.5/AssFontSubset.Console_v2.0.5_win-arm64.7z",
+            "hash": "b61aa467b9924b2f0a398cec99aa0d6a390fd34ea09d4255c177889aed8dd161"
         }
     },
     "bin": [
