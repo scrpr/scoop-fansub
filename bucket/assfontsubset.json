@@ -17,6 +17,15 @@
         [
             "AssFontSubset.Console.exe",
             "assfontsubset"
+        ],
+        [
+            "AssFontSubset.Console.exe",
+            "afs"
+        ],
+        [
+            "AssFontSubset.Console.exe",
+            "afsnb",
+            "--subset-backend HarfBuzzSubset"
         ]
     ],
     "checkver": {
