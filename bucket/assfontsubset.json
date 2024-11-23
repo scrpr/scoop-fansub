@@ -1,16 +1,16 @@
 {
-    "version": "2.0.5",
+    "version": "2.1.0",
     "description": "使用 fonttools 生成 ASS 字幕文件的字体子集，并自动修改字体名称及 ASS 文件中对应的字体名称",
     "homepage": "https://github.com/AmusementClub/AssFontSubset",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.0.5/AssFontSubset.Console_v2.0.5_win-x64.7z",
-            "hash": "ff09f4918548585ecdf8af9432daa600da17cfd85b385ee2143eb9bd97772c07"
+            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.1.0/AssFontSubset.Console_v2.1.0_win-x64.zip",
+            "hash": "7987d1335e02877cc94660b87a0fba53a7d419091bc705b1f28a0951c50cc02c"
         },
         "arm64": {
-            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.0.5/AssFontSubset.Console_v2.0.5_win-arm64.7z",
-            "hash": "b61aa467b9924b2f0a398cec99aa0d6a390fd34ea09d4255c177889aed8dd161"
+            "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v2.1.0/AssFontSubset.Console_v2.1.0_win-arm64.zip",
+            "hash": "e0bf2fb28200dca3b5ad31b2e986d86819c60feea6a5f4e3898ead6a95330365"
         }
     },
     "bin": [
@@ -19,14 +19,19 @@
             "assfontsubset"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/AmusementClub/AssFontSubset/releases/latest",
+        "jsonpath": "$.assets[?(@.name =~ /^.*win-x64.*$/)].name",
+        "regex": "v(?<version>[\\d.]+).*\\.(?<extension>.*?)$",
+        "replace": "${version}"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-x64.7z"
+                "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-x64.$matchExtension"
             },
             "arm64": {
-                "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-arm64.7z"
+                "url": "https://github.com/AmusementClub/AssFontSubset/releases/download/v$version/AssFontSubset.Console_v$version_win-arm64.$matchExtension"
             }
         }
     }
